@@ -1,0 +1,22 @@
+# System & OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Local Server & Temp Files
+*.log
+*.tmp
+*.bak
+
+# Configuration & Verification Files (Sensitif)
+api/config.php
+googlecbac9b8989967e25.html

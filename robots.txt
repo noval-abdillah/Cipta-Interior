@@ -1,0 +1,94 @@
+# ============================================================
+# robots.txt - SEO, GEO, and AI Search Friendly
+# https://ciptainterior.rf.gd/robots.txt
+# ============================================================
+
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /portofolio
+Allow: /contact
+Allow: /client
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.php$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.bak$
+
+# Google Search and AI features use normal Google crawling/indexing systems.
+User-agent: Googlebot
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+
+# Bing Search, Copilot, and Bing grounding results.
+User-agent: Bingbot
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+# OpenAI search and user-triggered retrieval.
+User-agent: OAI-SearchBot
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+# Optional: allow GPTBot so public content can be understood by OpenAI systems.
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+# Perplexity AI search citations.
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+Sitemap: https://ciptainterior.rf.gd/sitemap.xml

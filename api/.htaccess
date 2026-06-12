@@ -1,0 +1,21 @@
+# ============================================================
+#  .HTACCESS — htdocs/api/
+#  InfinityFree compatible (tanpa negative lookahead)
+# ============================================================
+
+Options -Indexes
+
+# CORS Headers
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin "https://ciptainterior.rf.gd"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+    Header always set Access-Control-Max-Age "86400"
+</IfModule>
+
+# Izinkan hanya api.php, blokir semua file lain
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^api\.php$ - [L]
+    RewriteRule ^ - [F,L]
+</IfModule>

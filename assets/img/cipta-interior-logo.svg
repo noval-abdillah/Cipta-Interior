@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Cipta Interior logo">
+  <rect width="512" height="512" rx="64" fill="#0d2240"/>
+  <rect x="34" y="34" width="444" height="444" rx="48" fill="none" stroke="#2a7fd4" stroke-width="10"/>
+  <text x="256" y="222" text-anchor="middle" font-family="Georgia, serif" font-size="116" font-weight="700" fill="#2a7fd4">C</text>
+  <line x1="132" y1="258" x2="380" y2="258" stroke="#2a7fd4" stroke-width="8"/>
+  <text x="256" y="390" text-anchor="middle" font-family="Georgia, serif" font-size="116" font-weight="700" fill="#ffffff">I</text>
+</svg>
