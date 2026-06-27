@@ -1,0 +1,169 @@
+# ============================================================
+#  .HTACCESS UTAMA — htdocs/
+#  Kompatibel: InfinityFree / rf.gd (Apache + mod_rewrite)
+#  Fitur: Security | SEO | Caching | Compression
+# ============================================================
+
+# ----------------------------------------------------------
+# 1. ENGINE REWRITE
+# ----------------------------------------------------------
+Options -Indexes
+Options -MultiViews
+ServerSignature Off
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+</IfModule>
+
+# ----------------------------------------------------------
+# 2. PAKSA HTTPS (aktifkan jika hosting sudah punya SSL)
+# ----------------------------------------------------------
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# </IfModule>
+
+# ----------------------------------------------------------
+# 3. HAPUS WWW → non-WWW
+# ----------------------------------------------------------
+# <IfModule mod_rewrite.c>
+#     RewriteCond %{HTTP_HOST} ^www\.ciptainterior\.rf\.gd [NC]
+#     RewriteRule ^(.*)$ https://ciptainterior.rf.gd/$1 [R=301,L]
+# </IfModule>
+
+# ----------------------------------------------------------
+# 4. HAPUS EKSTENSI .html DARI URL (SEO Clean URL)
+# PENTING: Redirect .html dulu, BARU internal rewrite
+# ----------------------------------------------------------
+<IfModule mod_rewrite.c>
+    # STEP 1: Redirect URL dengan .html → tanpa .html (canonical)
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(.+)\.html(\ |\?) [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # STEP 2: /blog → blog.html (root level)
+    RewriteRule ^blog$ blog.html [L]
+
+    # STEP 3: /blog/slug → blog/slug.html (subfolder articles)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^blog/([^./]+)$ blog/$1.html [L]
+
+    # STEP 4: Internal rewrite — URL tanpa ekstensi → file .html (semua halaman lain)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^.]+)$ $1.html [L]
+</IfModule>
+
+# ----------------------------------------------------------
+# 5. PROTEKSI FILE SENSITIF
+# ----------------------------------------------------------
+<FilesMatch "\.(env|log|sql|bak|sh|git|yml|yaml|json|lock|md)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+    RewriteRule ^uploads/.*\.(php|php3|php4|php5|phtml|pl|py|jsp|asp|sh|cgi)$ - [F,L]
+</IfModule>
+
+# ----------------------------------------------------------
+# 6. PROTEKSI FOLDER ADMIN & API
+# ----------------------------------------------------------
+# Hanya blokir admin.php di root, biarkan api/api.php bisa diakses
+<Files "admin.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# ----------------------------------------------------------
+# 7. PROTEKSI HOTLINKING GAMBAR
+# ----------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_REFERER} !^$
+    RewriteCond %{HTTP_REFERER} !^https?://(www\.)?ciptainterior\.rf\.gd [NC]
+    RewriteRule \.(jpg|jpeg|png|gif|webp|svg)$ - [F,NC,L]
+</IfModule>
+
+# ----------------------------------------------------------
+# 8. SECURITY HEADERS
+# ----------------------------------------------------------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# ----------------------------------------------------------
+# 9. GZIP COMPRESSION
+# ----------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml
+    AddOutputFilterByType DEFLATE text/css text/javascript
+    AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+    AddOutputFilterByType DEFLATE application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ----------------------------------------------------------
+# 10. BROWSER CACHING
+# ----------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html                 "access plus 1 hour"
+    ExpiresByType text/css                  "access plus 1 month"
+    ExpiresByType application/javascript    "access plus 1 month"
+    ExpiresByType text/javascript           "access plus 1 month"
+    ExpiresByType image/jpeg                "access plus 3 months"
+    ExpiresByType image/png                 "access plus 3 months"
+    ExpiresByType image/webp                "access plus 3 months"
+    ExpiresByType image/gif                 "access plus 3 months"
+    ExpiresByType image/svg+xml             "access plus 3 months"
+    ExpiresByType image/x-icon             "access plus 1 year"
+    ExpiresByType font/woff                 "access plus 1 year"
+    ExpiresByType font/woff2                "access plus 1 year"
+    ExpiresByType application/font-woff     "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js)$">
+        Header append Cache-Control "public, must-revalidate"
+    </FilesMatch>
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+        Header append Cache-Control "public, immutable"
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------
+# 11. HALAMAN ERROR CUSTOM (opsional, buat file-nya dulu)
+# ----------------------------------------------------------
+# ErrorDocument 404 /404.html
+# ErrorDocument 403 /403.html
+# ErrorDocument 500 /500.html
+
+# ----------------------------------------------------------
+# 12. MIME TYPES TAMBAHAN
+# ----------------------------------------------------------
+<IfModule mod_mime.c>
+    AddType image/webp .webp
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType application/json .json
+</IfModule>
+
+# ----------------------------------------------------------
+# 13. BLOKIR USER-AGENT MENCURIGAKAN
+# ----------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} (libwww-perl|wget|python|nikto|scan|acunetix|nmap) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (masscan|zgrab|sqlmap|dirbuster) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>

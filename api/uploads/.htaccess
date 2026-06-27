@@ -1,0 +1,9 @@
+Options -Indexes -MultiViews
+SetHandler default-handler
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+<IfModule mod_access_compat.c>
+    Order allow,deny
+    Allow from all
+</IfModule>

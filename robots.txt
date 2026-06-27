@@ -1,0 +1,45 @@
+# ============================================================
+#  robots.txt — SEO Friendly
+#  https://ciptainterior.rf.gd/robots.txt
+# ============================================================
+
+User-agent: *
+
+# Izinkan semua halaman publik
+Allow: /
+Allow: /about
+Allow: /services
+Allow: /portofolio
+Allow: /contact
+Allow: /client
+Allow: /blog
+Allow: /assets/css/
+Allow: /assets/img/
+
+# Blokir folder sensitif dari crawler
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /assets/js/
+
+# Blokir file spesifik
+Disallow: /*.php$
+Disallow: /*.log$
+Disallow: /*.sql$
+
+# Google khusus
+User-agent: Googlebot
+Allow: /assets/css/
+Allow: /assets/img/
+Allow: /uploads/portfolio/
+Disallow: /admin/
+Disallow: /api/
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://ciptainterior.rf.gd/sitemap.xml

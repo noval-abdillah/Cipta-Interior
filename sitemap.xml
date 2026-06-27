@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ══ BERANDA ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/"/>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&amp;q=85</image:loc>
+      <image:caption>Cipta Interior — Jasa Interior Custom &amp; Kitchen Set Bekasi</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══ TENTANG KAMI ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/about</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/about"/>
+  </url>
+
+  <!-- ══ LAYANAN ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/services</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/services"/>
+  </url>
+
+  <!-- ══ PORTOFOLIO ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/portofolio</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/portofolio"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/portofolio"/>
+  </url>
+
+  <!-- ══ KLIEN KAMI ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/client</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/client"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/client"/>
+  </url>
+
+  <!-- ══ KONTAK ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/contact</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/contact"/>
+  </url>
+
+  <!-- ══ BLOG INDEX ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="id" href="https://ciptainterior.rf.gd/blog"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ciptainterior.rf.gd/blog"/>
+  </url>
+
+  <!-- ══ BLOG ARTIKEL ══ -->
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/kitchen-set-minimalis</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&amp;q=85</image:loc>
+      <image:caption>10 Tips Memilih Kitchen Set Minimalis untuk Rumah di Bekasi</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/harga-kitchen-set-bekasi</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=1200&amp;q=85</image:loc>
+      <image:caption>Harga Kitchen Set Custom di Bekasi — Panduan 2025</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/desain-interior-residensial</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200&amp;q=85</image:loc>
+      <image:caption>5 Gaya Interior Residensial untuk Iklim Tropis Indonesia</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/furnitur-custom-material</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&amp;q=85</image:loc>
+      <image:caption>Cara Memilih Material Furnitur Custom yang Tahan Lama</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/interior-hotel-jabodetabek</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1200&amp;q=85</image:loc>
+      <image:caption>Inspirasi Desain Interior Hotel Bintang 3 di Jabodetabek</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://ciptainterior.rf.gd/blog/renovasi-total-ruang-tamu</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1615529182904-14819c35db37?w=1200&amp;q=85</image:loc>
+      <image:caption>Panduan Renovasi Total Ruang Tamu: Dari Konsep hingga Selesai</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

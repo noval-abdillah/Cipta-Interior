@@ -1,0 +1,40 @@
+# ============================================================
+#  .HTACCESS ADMIN — htdocs/admin/
+#  Proteksi ganda: IP Whitelist + Basic Auth Password
+# ============================================================
+
+# ----------------------------------------------------------
+# OPSI A: PROTEKSI IP WHITELIST (Rekomendasi)
+# Ganti dengan IP kamu (cek di: https://whatismyip.com)
+# ----------------------------------------------------------
+# Order Deny,Allow
+# Deny from all
+# Allow from 1.2.3.4
+# Allow from 5.6.7.8
+
+# ----------------------------------------------------------
+# OPSI B: BASIC AUTH (Username + Password)
+# Aktifkan dengan uncomment baris di bawah
+# ----------------------------------------------------------
+# AuthType Basic
+# AuthName "Admin Area - Akses Terbatas"
+# AuthUserFile /home/vol_xxxxxx/ciptainterior/.htpasswd
+# Require valid-user
+
+# ----------------------------------------------------------
+# WAJIB: Blokir eksekusi PHP upload di folder ini
+# ----------------------------------------------------------
+<FilesMatch "\.php$">
+    Order Allow,Deny
+    # Comment baris Deny berikut kalau admin.php ada di sini
+    # Deny from all
+</FilesMatch>
+
+# Blokir directory listing
+Options -Indexes
+
+# Blokir akses ke file sensitif
+<FilesMatch "\.(log|sql|bak|env)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>

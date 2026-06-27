@@ -1,0 +1,18 @@
+# Google Search Console verification
+google*.html
+
+# Env & secrets
+.env
+*.env
+api/config.php
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
