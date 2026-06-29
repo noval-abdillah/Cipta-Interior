@@ -5,6 +5,22 @@
 
 User-agent: *
 
+# AI Crawlers - Explicit Allow for AEO/GEO Visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # Izinkan semua halaman publik
 Allow: /
 Allow: /about
