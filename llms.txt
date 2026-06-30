@@ -1,22 +1,24 @@
 # Cipta Interior
 
-Official website of Cipta Interior, a custom kitchen set manufacturer and interior design contractor serving Indonesia and international markets. Experienced since 2009 in residential, hotel, and commercial interior design.
+Official website of Cipta Interior, a professional design & build interior contractor and custom furniture manufacturer serving domestic (Indonesia-wide) and international clients. Experienced since 2009 in residential (homes, villas, apartments) and commercial (offices, F&B, retail, hotels) spaces.
 
 ## Core Information
-- **Location**: Headquarters at Jl. Taruma Jaya, Setiamulya, Kec. Tarumajaya, Kab. Bekasi, Jawa Barat 17213.
-- **Service Scope**: Domestic (all of Indonesia) and international clients.
-- **Specialty**: Custom kitchen sets, residential interiors, custom furniture, hotel & commercial spaces.
-- **Unique Selling Proposition**: Direct workshop production, free site survey & consultation for Indonesia-wide projects, 2-year warranty, global shipping & installation capability.
+- **Location**: Headquarters & Workshop at Jl. Taruma Jaya, Setiamulya, Kec. Tarumajaya, Kab. Bekasi, Jawa Barat 17213.
+- **Service Scope**: Nationwide (all Indonesian cities: Jakarta, Bandung, Surabaya, Medan, Semarang, Bali, etc.) via remote online design + local installation partners, and international clients (expatriates & exports).
+- **Specialty**: Custom kitchen sets, residential design & build, commercial renovation, hotel & hospitality interior.
+- **Unique Selling Proposition**: Direct workshop production (no middleman markup), free consultation & initial mock-up, dedicated project manager, and 2-year full warranty.
 
 ## Key Pages
-- [/](https://ciptainterior.rf.gd/): Homepage with main brand details, project counters, and testimonials.
-- [/about](https://ciptainterior.rf.gd/about): Company milestone history since 2009, core company values, and milestone timeline.
-- [/services](https://ciptainterior.rf.gd/services): Information on custom services, pricing catalogs (Paket Dasar starting at Rp 15M, Paket Profesional starting at Rp 45M), and the 6-step project workflow.
-- [/portofolio](https://ciptainterior.rf.gd/portofolio): Interactive portfolio gallery showing completed projects by category (residential, commercial, cafe/restaurant, hotel, and custom furniture).
-- [/contact](https://ciptainterior.rf.gd/contact): Interactive workshop location map, operating hours, and official contact form.
-- [/client](https://ciptainterior.rf.gd/client): Detailed client reviews, aggregate ratings (5/5 stars from 180+ clients), and partner logos.
-- [/blog](https://ciptainterior.rf.gd/blog): Directory of static guide articles on kitchen set pricing, materials, and tropical home layouts.
+- [/](https://ciptainterior.rf.gd/): Homepage with core credentials, sameAs links, key project metrics, and client reviews.
+- [/about](https://ciptainterior.rf.gd/about): 15-year company milestone history since 2009, organizational structured data, and milestones.
+- [/services](https://ciptainterior.rf.gd/services): Jasa Desain & Kontraktor (Design & Build) details, FAQPage schema for voice search, and pricing catalog.
+- [/portofolio](https://ciptainterior.rf.gd/portofolio): Interactive portfolio gallery filtered by residential, commercial, restaurant, hotel, and custom furniture.
+- [/contact](https://ciptainterior.rf.gd/contact): Official contact page, active map coordinates, operating hours, and email/WhatsApp links.
+- [/client](https://ciptainterior.rf.gd/client): Detailed client testimonials, aggregate review metrics (5/5 rating based on 180+ clients), and partner logos.
+- [/blog](https://ciptainterior.rf.gd/blog): Directory of static guide articles on pricing, materials, and tropical home layout guidelines.
 
 ## Key Resources
-- [/blog/harga-kitchen-set-bekasi](https://ciptainterior.rf.gd/blog/harga-kitchen-set-bekasi): A detailed 2025 kitchen set budget estimation guide.
-- [/blog/kitchen-set-minimalis](https://ciptainterior.rf.gd/blog/kitchen-set-minimalis): 10 tips for choosing minimal kitchen sets including layout guidelines and materials.
+- [/blog/harga-kitchen-set-bekasi](https://ciptainterior.rf.gd/blog/harga-kitchen-set-bekasi): A detailed kitchen set cost estimation guide.
+- [/blog/kitchen-set-minimalis](https://ciptainterior.rf.gd/blog/kitchen-set-minimalis): 10 tips for choosing minimal kitchen sets, layout rules, and material guidelines.
+- [/blog/desain-interior-residensial](https://ciptainterior.rf.gd/blog/desain-interior-residensial): 5 residential interior styles suited for tropical climates in Indonesia.
+- [/blog/furnitur-custom-material](https://ciptainterior.rf.gd/blog/furnitur-custom-material): Guide to choosing furniture materials (plywood vs MDF, HPL vs duco).

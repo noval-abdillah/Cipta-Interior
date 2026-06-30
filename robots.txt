@@ -4,8 +4,9 @@
 # ============================================================
 
 User-agent: *
+Allow: /
 
-# AI Crawlers - Explicit Allow for AEO/GEO Visibility
+# AI Crawlers - Explicit Allow for AEO/GEO Visibility & Training
 User-agent: GPTBot
 Allow: /
 
@@ -21,8 +22,19 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Izinkan semua halaman publik
+User-agent: CCBot
 Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Allow all public pages
 Allow: /about
 Allow: /services
 Allow: /portofolio
@@ -32,18 +44,18 @@ Allow: /blog
 Allow: /assets/css/
 Allow: /assets/img/
 
-# Blokir folder sensitif dari crawler
+# Disallow sensitive folders
 Disallow: /admin/
 Disallow: /api/
 Disallow: /uploads/
 Disallow: /assets/js/
 
-# Blokir file spesifik
+# Disallow specific file extensions
 Disallow: /*.php$
 Disallow: /*.log$
 Disallow: /*.sql$
 
-# Google khusus
+# Googlebot specific
 User-agent: Googlebot
 Allow: /assets/css/
 Allow: /assets/img/
@@ -51,7 +63,7 @@ Allow: /uploads/portfolio/
 Disallow: /admin/
 Disallow: /api/
 
-# Bing
+# Bingbot specific
 User-agent: Bingbot
 Allow: /
 Disallow: /admin/

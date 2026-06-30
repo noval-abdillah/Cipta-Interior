@@ -416,17 +416,19 @@ function applyLang(lang) {
   if (label) label.textContent = lang.toUpperCase();
   document.documentElement.lang = lang;
 
-  // Teks biasa
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if (dict[key] !== undefined) el.innerHTML = dict[key];
-  });
+  if (dict) {
+    // Teks biasa
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) el.innerHTML = dict[key];
+    });
 
-  // Placeholder
-  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-    const key = el.getAttribute('data-i18n-ph');
-    if (dict[key] !== undefined) el.placeholder = dict[key].replace(/&amp;/g, '&');
-  });
+    // Placeholder
+    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+      const key = el.getAttribute('data-i18n-ph');
+      if (dict[key] !== undefined) el.placeholder = dict[key].replace(/&amp;/g, '&');
+    });
+  }
 }
 
 /* ══════════════════════════════════════════════════════════════
@@ -718,7 +720,7 @@ function renderPF() {
       data-desc="${esc(it.description || '')}"
       onclick="pfItemClick(this)">
       <img src="${esc(it.image)}" alt="${esc(it.title)}" loading="lazy"
-           onerror="this.src='${fallback}'">
+           onerror="this.onerror=null;this.src='${fallback}'">
       <div class="pf-item-ol">
         <div class="pf-item-cat">${esc(it.category)}</div>
         <div class="pf-item-name">${esc(it.title)}</div>
@@ -744,7 +746,7 @@ function renderTS() {
       <p class="ts-text">${esc(ts.text)}</p>
       <div class="ts-auth">
         <img class="ts-av-img" src="${esc(ts.photo)}" alt="${esc(ts.name)}"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+             onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="ts-av" style="display:none">${ts.name.charAt(0)}</div>
         <div>
           <div class="ts-aname">${esc(ts.name)}</div>
@@ -1019,7 +1021,7 @@ function updateAdmList() {
   list.innerHTML = pf.map(it => `
     <div class="adm-item" id="ali-${Number(it.id)}">
       <img class="adm-thumb" src="${esc(it.image)}" alt="${esc(it.title)}"
-           onerror="this.style.opacity='.3'">
+           onerror="this.onerror=null;this.style.opacity='.3'">
       <div class="adm-info">
         <div class="nm">${esc(it.title)}</div>
         <div class="ct">${esc(it.category)}</div>

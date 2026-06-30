@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Portofolio — Cipta Interior Bekasi</title>
-<meta name="description" content="Portofolio Cipta Interior - 100+ proyek sukses kitchen set custom, interior residensial, komersial, hotel di Indonesia dan pasar internasional. Lihat hasil karya terbaik kami.">
-<meta property="og:title" content="Portofolio — Cipta Interior Bekasi">
+<title>Portofolio Karya Desain &amp; Konstruksi Interior | Cipta Interior</title>
+<meta name="description" content="Koleksi portofolio proyek design and build Cipta Interior. Galeri hasil kerja untuk residensial (rumah, apartemen, vila) dan komersial (kantor, retail, hotel) terpercaya.">
+<meta property="og:title" content="Portofolio Karya Desain &amp; Konstruksi — Cipta Interior">
 <meta property="og:image" content="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=1200&q=85">
 <meta name="theme-color" content="#2a7fd4">
-<meta name="keywords" content="portofolio interior bekasi, proyek kitchen set bekasi, desain interior residensial bekasi, interior hotel bekasi, furnitur custom bekasi, portofolio cipta interior">
+<meta name="keywords" content="portofolio interior design, proyek konstruksi interior, custom furniture gallery, kontraktor interior residensial, portfolio hotel">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Cipta Interior">
 <meta property="og:type" content="website">
@@ -29,7 +29,7 @@
   "description": "Galeri karya interior Cipta Interior: kitchen set custom, interior residensial, komersial, hotel, dan furnitur custom di Bekasi.",
   "url": "https://ciptainterior.rf.gd/portofolio",
   "provider": {
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     "name": "Cipta Interior",
     "url": "https://ciptainterior.rf.gd"
   }
@@ -338,7 +338,7 @@ input, select, textarea { font-size: 16px !important; }
       <div class="ft-soc">
         <a href="https://instagram.com/ciptainterior_" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://wa.me/6285890060856" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:Farhancksgroup@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="mailto:farhancksgroup@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
     <div class="ft-col"><h4>Layanan</h4><ul>
@@ -356,7 +356,7 @@ input, select, textarea { font-size: 16px !important; }
     <div class="ft-col"><h4>Kontak</h4><ul>
       <li><address style="font-style:normal">Jl. Taruma Jaya, Setiamulya,<br>Kec. Tarumajaya, Kab. Bekasi</address></li>
       <li><a href="tel:+6285890060856">+62 858-9006-0856</a></li>
-      <li><a href="mailto:Farhancksgroup@gmail.com">Farhancksgroup@gmail.com</a></li>
+      <li><a href="mailto:farhancksgroup@gmail.com">farhancksgroup@gmail.com</a></li>
     </ul></div>
   </div>
   <div class="ft-bot">
@@ -592,7 +592,7 @@ function updateAdmList() {
   if (!items.length) { list.innerHTML = '<div class="adm-loading">Belum ada item.</div>'; return; }
   list.innerHTML = items.map(it => `
     <div class="adm-item" id="ali-${it.id}">
-      <img class="adm-thumb" src="${escAdmin(it.image)}" alt="${escAdmin(it.title)}" onerror="this.style.opacity='.3'">
+      <img class="adm-thumb" src="${escAdmin(it.image)}" alt="${escAdmin(it.title)}" onerror="this.onerror=null;this.style.opacity='.3'">
       <div class="adm-info"><div class="nm">${escAdmin(it.title)}</div><div class="ct">${escAdmin(it.category)}</div></div>
       <button class="adm-del" onclick="delItem(${Number(it.id)})" title="Hapus"><i class="fas fa-trash"></i></button>
     </div>`).join('');
