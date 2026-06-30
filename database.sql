@@ -51,8 +51,8 @@ CREATE TABLE IF NOT EXISTS `rate_limit` (
 -- ============================================================
 -- AKUN DEMO DEFAULT ADMIN
 -- Username: admin
--- Password asli: admin123
+-- Password Hash Riil
 -- ============================================================
 INSERT INTO `admins` (`username`, `password`, `role`, `is_active`) 
-VALUES ('admin', '$2y$10$U4sW7xSjK9K6vT6l6u6y6O5P5T5V5W5X5y5Z5a5b5c5d5e5f5g5h5', 'admin', 1)
+VALUES ('admin', '$2y$12$nHw1jSGxEjr9aMVeCvrgyObIRVnKj.NNHEvD1E2DeANhoKaMwQdRG', 'admin', 1)
 ON DUPLICATE KEY UPDATE `username`=`username`;
